@@ -1,0 +1,180 @@
+.journey-section {
+  background-color: var(--bg-primary);
+}
+
+.journey-content {
+  margin-top: 3rem;
+  max-width: 960px;
+}
+
+.academic-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.academic-card-header {
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom: 1px solid var(--border-color-light);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--bg-elevated);
+}
+
+.degree-badge-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.degree-icon {
+  width: 54px;
+  height: 54px;
+  background-color: var(--accent-green);
+  color: #FFFFFF;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.degree-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent-green);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.degree-title {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.university-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.uni-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.uni-location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.academic-body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.academic-overview h4, .focus-areas-container h4 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.academic-overview p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.focus-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.focus-pill:hover {
+  background-color: var(--bg-accent-soft);
+  border-color: rgba(30, 61, 52, 0.2);
+  color: var(--accent-green);
+}
+
+.focus-check {
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.academic-footer {
+  padding: 1.25rem 2.5rem;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  background-color: var(--bg-accent-soft);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+}
+
+.academic-note {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .academic-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .university-info {
+    align-items: flex-start;
+  }
+
+  .academic-body, .academic-card-header {
+    padding: 1.5rem;
+  }
+}

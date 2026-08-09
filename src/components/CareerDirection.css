@@ -1,0 +1,121 @@
+.direction-section {
+  background-color: var(--bg-elevated);
+  border-top: 1px solid var(--border-color-light);
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.direction-banner {
+  background-color: var(--accent-green);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 3rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.banner-icon {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-tag {
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.5rem;
+}
+
+.banner-quote {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.roles-section-header {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.roles-section-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.35rem;
+}
+
+.roles-section-header p {
+  color: var(--text-secondary);
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.role-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.role-card:hover {
+  border-color: var(--accent-green);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.role-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.target-icon {
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.role-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.role-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .direction-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+  }
+  .banner-quote {
+    font-size: 1.35rem;
+  }
+}
